@@ -1,27 +1,34 @@
-.quiz-container{
+.quiz-container {
     background-color: rgba(255, 255, 255, 0.833);
     padding: 15px 30px;
     border-radius: 10px;
     width: 350px;
     margin: auto;
-
 }
-.quiz-container h1{
+
+.quiz-container h1 {
     color: rgb(50, 49, 71);
     font-style: italic;
     font-size: 25px;
     text-align: center;
     margin-bottom: 15px;
 }
-.quiz-container hr{
+
+.quiz-container hr {
     color: rgb(50, 49, 71);
     margin-bottom: 5px;
 }
-.quiz-container .questions h2{
+
+.quiz-container .questions h2 {
     color: rgba(41, 40, 43, 0.94);
     font-size: 18px;
 }
-.quiz-container .questions ul li{
+
+.quiz-container .questions ul {
+    padding: 0;
+}
+
+.quiz-container .questions ul li {
     font-size: 13px;
     list-style: none;
     margin-top: 15px;
@@ -31,7 +38,8 @@
     border-radius: 10px;
     cursor: pointer;
 }
-.questions button{
+
+.quiz-container .questions button {
     margin-top: 10px;
     width: 100px;
     height: 30px;
@@ -40,9 +48,47 @@
     border: none;
     outline: none;
     color: rgb(33, 18, 35);
+    cursor: pointer;
 }
-.questions p{
+
+.quiz-container .questions p {
     margin-top: 10px;
     font-size: 12px;
     margin-bottom: 20px;
+}
+
+.quiz-container .questions ul li.correct {
+    background-color: rgba(23, 165, 37, 0.5);
+}
+
+.quiz-container .questions ul li.incorrect {
+    background-color: rgba(255, 99, 71, 0.478); 
+}
+.quiz-container .questions ul li.show-correct {
+    background-color: rgba(23, 165, 37, 0.822);
+}
+.results h2{
+    font-size: 18px;
+    color: rgba(23, 165, 37, 0.822);
+    
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.results p{
+    font-size: 15px;
+    color: gray;
+}
+.results button{
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(137, 43, 226, 0.444);
+    border: none;
+    outline: none;
+    color: rgb(33, 18, 35);
+    cursor: pointer;
 }
